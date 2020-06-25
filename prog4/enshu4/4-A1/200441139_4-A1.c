@@ -13,10 +13,10 @@ int main(void) {
 		//入力した数と答えを評価して表示
 		/*答えよりも大きい数を入力した際に答えとの差が
 		5未満、5以上10未満、10以上の場合に分けて表示*/
-		if (ans < input && input < ans + 5) {
+		if ((ans < input) && (input < ans + 5)) {
 			printf("おしい！もうちょっと下！");
 		}
-		if (input < ans + 10 && input >= ans + 5) {
+		if ((input < ans + 10) && (input >= ans + 5)) {
 			printf("もうちょっと下！");
 		}
 		if (input >= ans + 10) {
@@ -25,10 +25,10 @@ int main(void) {
 
 		/*答えよりも小さい数を入力した際に答えとの差が
 		5未満、5以上10未満、10以上の場合に分けて表示*/
-		if (ans > input && input + 5 > ans) {
+		if ((ans > input) && (input + 5 > ans)) {
 			printf("おしい！もうちょっと上！");
 		}
-		if (input + 5 <= ans && input + 10 > ans) {
+		if ((input + 5 <= ans) && (input + 10 > ans)) {
 			printf("もうちょっと上！");
 		}
 		if (input + 10 <= ans) {
