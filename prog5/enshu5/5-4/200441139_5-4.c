@@ -26,7 +26,7 @@ int main(void) {
 	for (i = 0; i < 4; i++) {
 		sum = sum + member[i];
 	}
-	printf("\n合計：%d円", sum);  //合計の表示
+	printf("\n合計：%d円", sum);  //合計額の表示
 
 	return 0;
 }
